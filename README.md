@@ -25,7 +25,7 @@ As with any such directive, you have to tell Caddy where to put in the execution
 order wake_on_lan before respond
 ```
 
-Internally, the magic packets are throttled to be sent at most once every 10 minutes per remote host, even if more frequent requests arrive at the server, as sending the packet once is of course enough to wake up the remote host.
+Internally, the magic packets are throttled to be sent at most once every 1 minutes per remote host, even if more frequent requests arrive at the server, as sending the packet once is of course enough to wake up the remote host.
 
 ## Example Configuration
 

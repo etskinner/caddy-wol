@@ -84,7 +84,7 @@ func (m Middleware) ServeHTTP(w http.ResponseWriter, r *http.Request, next caddy
 		if err != nil {
 			return err
 		}
-		time.AfterFunc(10*time.Minute, func() {
+		time.AfterFunc(1*time.Minute, func() {
 			_, _ = m.pool.Delete(m.key)
 		})
 	}
